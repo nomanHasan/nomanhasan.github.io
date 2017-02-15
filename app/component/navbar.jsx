@@ -60,10 +60,10 @@ export class Navbar extends React.Component {
                         <a className="nav-item is-tab is-hidden-tablet">Features</a>
                         <a className="nav-item is-tab is-hidden-tablet">Pricing</a>
                         <a className="nav-item is-tab is-hidden-tablet">About</a>
-                        <a className="nav-item is-tab">
+                        <a className="nav-item is-tab" href="mailto:nomanbinhussein@gmail.com">
                             <span className="fa fa-envelope fa-2x"> Mail</span>
                         </a>
-                        <a className="nav-item is-tab"><span className="fa fa-mobile fa-2x"> Call</span></a>
+                        <a className="nav-item is-tab" href="tel:+8801676088718"><span className="fa fa-mobile fa-2x"> Call</span></a>
                     </div>
                 </div>
             </nav>
