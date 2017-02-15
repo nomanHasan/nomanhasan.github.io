@@ -19,7 +19,7 @@ var projects = [
     },
     {
         title: "NODE EXPRESS MONGO REST API SERVER",
-        description: "his is a REST API Server built with MEN software stack. It is a type of E-Commerce web Server ready for mobile Apps. It does not generate pages on the server.",
+        description: "This is a REST API Server built with MEN software stack. It is a type of E-Commerce web Server ready for mobile Apps. It does not generate pages on the server.",
         dev_tools: "Node, Express, Mongo, JWT authentication",
         github_repo: "https://github.com/nomanHasan/Node-Express-Mongo-REST-API-Server"
     },

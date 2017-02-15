@@ -11,6 +11,7 @@ export class Profile extends React.Component {
             <h2 className="subtitle">
                 Software Engineer
       </h2>
+      <p className="lucon-small">B. Sc. in Software Engineering</p>
       <div className="column">
           <table className="table lucon-small transparent is-fullwidth">
             <tbody>

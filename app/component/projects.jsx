@@ -17,7 +17,7 @@ export class Projects extends React.Component {
                                 <div className="media-content">
                                 <div className="content">
                                     <p>
-                                    <strong className="lucon-big">{d.title}</strong> <small>@johnsmith</small> <small>31m</small>
+                                    <strong className="lucon-big">{d.title}</strong>
                                     <br/>
                                     {d.description}
                                     </p>
