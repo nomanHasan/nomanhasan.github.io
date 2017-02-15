@@ -18,7 +18,7 @@ export class Home extends React.Component {
             <Networks/>
             <div className="panel ">
                 <div className="panel-block">
-                    <a className="button is-large is-success radius" href="./NomanHasan-Resume2017.pdf">
+                    <a href="./NomanHasan-Resume2017.pdf" className="button is-large is-success radius">
                         <span className="icon is-medium">
                         <i className="fa fa-download"></i>
                         </span>
