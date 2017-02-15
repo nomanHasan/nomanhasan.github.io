@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma.min.css">
+</head>
+
+<body class="layout-documentation page-grid">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="nav-item is-brand" href="http://bulma.io">
+                    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <a class="nav-item" href="https://github.com/jgthms/bulma">
+                    <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+                </a>
+                <a class="nav-item" href="https://twitter.com/jgthms">
+                    <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+                </a>
+            </div>
+
+            <span id="nav-toggle" class="nav-toggle">
+    <span></span>
+            <span></span>
+            <span></span>
+            </span>
+
+            <div id="nav-menu" class="nav-right nav-menu">
+                <a class="nav-item " href="http://bulma.io/">
+      Home
+    </a>
+                <a class="is-hidden nav-item  " href="http://bulma.io/templates/">
+                    <span>Templates</span>
+                    <span class="tag is-small is-success">New!</span>
+                </a>
+                <a class="nav-item  is-active" href="/documentation/overview/start/">
+      Documentation
+    </a>
+                <a class="nav-item " href="http://bulma.io/blog/">
+      Blog
+    </a>
+
+
+                <span class="nav-item">
+        <a id="twitter"
+          class="button"
+          data-social-network="Twitter"
+          data-social-action="tweet"
+          data-social-target="http://bulma.io"
+          target="_blank"
+          href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&url=http://bulma.io&via=jgthms">
+          <span class="icon">
+            <i class="fa fa-twitter"></i>
+          </span>
+                <span>Tweet</span>
+                </a>
+                <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.3.0.zip">
+                    <span class="icon">
+            <i class="fa fa-download"></i>
+          </span>
+                    <span>Download</span>
+                </a>
+                </span>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <p class="title">
+                            Documentation
+                        </p>
+                        <p class="subtitle">
+                            Everything you need to <strong>create a website</strong> with Bulma
+                        </p>
+                    </div>
+                    <div class="column is-narrow">
+                        <div id="carbon" class="box">
+                            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bulmaio" id="_carbonads_js"></script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <div class="container">
+                <nav class="tabs is-boxed">
+                    <ul>
+                        <li>
+                            <a href="/documentation/overview/start/">Overview</a>
+                        </li>
+                        <li>
+                            <a href="http://bulma.io/documentation/modifiers/syntax">Modifiers</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="http://bulma.io/documentation/grid/columns">Grid</a>
+                        </li>
+                        <li>
+                            <a href="http://bulma.io/documentation/elements/box/">Elements</a>
+                        </li>
+                        <li>
+                            <a href="http://bulma.io/documentation/components/card/">Components</a>
+                        </li>
+                        <li>
+                            <a href="http://bulma.io/documentation/layout/container/">Layout</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <nav class="nav has-shadow">
+        <div class="container">
+            <div class="nav-left">
+                <a class="nav-item is-tab is-active" href="http://bulma.io/documentation/grid/columns/">
+        Columns
+      </a>
+                <a class="nav-item is-tab " href="http://bulma.io/documentation/grid/tiles/">
+        Tiles
+      </a>
+            </div>
+    </nav>
+
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Columns</h1>
+            <h2 class="subtitle">A simple way to build <strong>responsive columns</strong></h2>
+            <hr>
+            <div class="content">
+                <p>To build a <strong>grid</strong>, just:</p>
+                <ol>
+                    <li>Add a <code>columns</code> container</li>
+                    <li>Add as many <code>column</code> elements as you want</li>
+                </ol>
+                <p>Each column will have an <strong>equal width</strong>, no matter the number of columns.</p>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <p class="notification is-info">First column</p>
+                </div>
+                <div class="column">
+                    <p class="notification is-success">Second column</p>
+                </div>
+                <div class="column">
+                    <p class="notification is-warning">Third column</p>
+                </div>
+                <div class="column">
+                    <p class="notification is-danger">Fourth column</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
