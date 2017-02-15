@@ -10,7 +10,7 @@ export class Education extends React.Component {
                         console.log(d);
                         return <div className="card transparent">
                             <header className="card-header">
-                                <p className="card-header-title lucon-medium">
+                                <p className="card-header-title lucon-big">
                                     {d.Degree}
                                 </p>
                                 <a className="card-header-icon">

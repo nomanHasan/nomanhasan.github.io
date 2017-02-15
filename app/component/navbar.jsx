@@ -61,11 +61,9 @@ export class Navbar extends React.Component {
                         <a className="nav-item is-tab is-hidden-tablet">Pricing</a>
                         <a className="nav-item is-tab is-hidden-tablet">About</a>
                         <a className="nav-item is-tab">
-                            <figure className="image is-16x16" style={{marginRight: 8 + 'px'}}>
-                                <img src="http://bulma.io/images/jgthms.png"/></figure>
-                            Profile
+                            <span className="fa fa-envelope fa-2x"> Mail</span>
                         </a>
-                        <a className="nav-item is-tab">Log out</a>
+                        <a className="nav-item is-tab"><span className="fa fa-mobile fa-2x"> Call</span></a>
                     </div>
                 </div>
             </nav>
