@@ -11,7 +11,11 @@ export class Projects extends React.Component {
                             <article className="media">
                                 <div className="media-left">
                                 <figure className="image is-128x128">
+                                    {d.images ? 
+                                    <img src={"./public/images/"+d.images[0]} alt="Image"></img> 
+                                    :
                                     <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></img>
+                                    }
                                 </figure>
                                 </div>
                                 <div className="media-content">
