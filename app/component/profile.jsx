@@ -24,6 +24,10 @@ export class Profile extends React.Component {
                     <td>Male</td>
                 </tr>
                 <tr>
+                    <td className="has-text-right"><b>Web Speciality</b></td>
+                    <td>MEAN Stack 2.0</td>
+                </tr>
+                <tr>
                     <td className="has-text-right"><b>Nationality</b></td>
                     <td>Bangladeshi</td>
                 </tr>

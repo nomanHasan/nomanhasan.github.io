@@ -6,6 +6,7 @@ import { Skills } from './component/skills.jsx';
 import { Education } from './component/education.jsx';
 import {Title } from './template/title.jsx';
 import {Projects } from './component/projects.jsx';
+import {Websites } from './component/websites.jsx';
 
 
 class App extends React.Component {
@@ -13,12 +14,14 @@ class App extends React.Component {
     return <div className="App cloud">
       <Navbar/>
       <Home/>
+      <Title title="Developed Websites" id="websites" />
+      <Websites/>
+      <Title title="Projects" id="projects" />
+      <Projects/>
       <Title title="Skills" subtitle="Skills in Programming" id="skills"/>
       <Skills/>
       <Title title="Education" id="education" />
       <Education/>
-      <Title title="Projects" id="projects" />
-      <Projects/>
     </div>;
   }
 }
