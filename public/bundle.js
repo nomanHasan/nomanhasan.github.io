@@ -9916,7 +9916,7 @@ var Navbar = exports.Navbar = function (_React$Component) {
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'fa fa-envelope fa-2x' },
-                                    ' Mail'
+                                    ' EMail Me'
                                 )
                             ),
                             _react2.default.createElement(
@@ -9925,7 +9925,7 @@ var Navbar = exports.Navbar = function (_React$Component) {
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'fa fa-mobile fa-2x' },
-                                    ' Call'
+                                    ' Call Me'
                                 )
                             )
                         )
