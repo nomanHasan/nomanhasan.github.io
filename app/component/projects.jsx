@@ -7,7 +7,7 @@ export class Projects extends React.Component {
         super(props);
         var pros = projects.map(d=>{
                         console.log(d);
-                    return <div className="box">
+                    return <div key={d.title} className="box">
                             <article className="media">
                                 <div className="media-left">
                                 <figure className="image is-128x128">

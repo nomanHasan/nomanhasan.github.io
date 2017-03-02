@@ -8,7 +8,7 @@ export class Education extends React.Component {
         var educations = resume["Education"];
         var skills = educations.map(d=>{
                         console.log(d);
-                        return <div className="card transparent">
+                        return <div key={d.Degree} className="card transparent">
                             <header className="card-header">
                                 <p className="card-header-title lucon-big">
                                     {d.Degree}
@@ -51,7 +51,7 @@ export class Education extends React.Component {
                                                 Major Courses
                                             </div>
                                             {d["Major Courses"].map(c=>{
-                                                return <p>{c}, </p>
+                                                return <p key={c}>{c}, </p>
                                             })}
                                         </div>
                                     </div>
