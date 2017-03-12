@@ -25,7 +25,7 @@ export class Profile extends React.Component {
                 </tr>
                 <tr>
                     <td className="has-text-right"><b>Web Speciality</b></td>
-                    <td>MEAN Stack 2.0</td>
+                    <td><strong>MEAN Stack 2.0</strong> and <strong>MERN Stack</strong></td>
                 </tr>
                 <tr>
                     <td className="has-text-right"><b>Nationality</b></td>
