@@ -38,6 +38,7 @@ var resume = {
         "Mother's Occupation": "Housewife",
         "Adress": "House No 152, Madrasa road, Ati, Siddhirganj, Narayanganj",
         "Date of Birth": "23rd June, 1995",
+        "DOB": "1995-06-23",
         "Language Known": "Bangla, English"
     },
     "Contact Information": [{
