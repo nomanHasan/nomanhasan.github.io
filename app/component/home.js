@@ -35,7 +35,7 @@ export class Home extends React.Component {
                             <a href="https://www.npmjs.com/package/ngx-window" className="button is-info is-outlined">
                                 www.npmjs.com/package/ngx-window
                             </a>
-                            <a href="/ngx-window" className="button is-info is-outlined">
+                            <a href="/ng-window" className="button is-info is-outlined">
                                 Ngx-Window Demo
                             </a>
                         </div>
