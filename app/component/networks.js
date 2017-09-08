@@ -16,7 +16,7 @@ export class Networks extends React.Component {
         });
         return <nav className="panel lucon-medium">
             <p className="panel-heading">
-                Extenral Accounts
+                External Accounts
             </p>
             {rows}
         </nav> ;

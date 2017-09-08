@@ -29,7 +29,7 @@ export class Home extends React.Component {
 
                     <nav className="panel ">
                         <p class="panel-heading">
-                            NPM Packages
+                            My NPM Packages
                             </p>
                         <div className="panel-block">
                             <a href="https://www.npmjs.com/package/ngx-window" className="button is-info is-outlined">
@@ -37,6 +37,14 @@ export class Home extends React.Component {
                             </a>
                             <a href="/ng-window" className="button is-info is-outlined">
                                 Ngx-Window Demo
+                            </a>
+                        </div>
+                        <div className="panel-block">
+                            <a href="https://www.npmjs.com/package/ngx-dragon" className="button is-info is-outlined">
+                                www.npmjs.com/package/ngx-dragon
+                            </a>
+                            <a href="http://nomanhasan.com/ngx-dragon" className="button is-info is-outlined">
+                                Ngx-Dragon Demo
                             </a>
                         </div>
                     </nav>
