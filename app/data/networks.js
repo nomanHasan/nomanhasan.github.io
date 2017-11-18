@@ -23,6 +23,12 @@ var networks = [
         name: "Medium",
         account: "medium.com/@nomanbinhussein",
         url: "https://medium.com/@nomanbinhussein"
+    },
+    {
+        icon: "fa fa-linkedin-square",
+        name: "LinkedIn",
+        account: "nomanbinhussein",
+        url: "https://linkedin.com/in/nomanbinhussein"
     }
 ]
 
