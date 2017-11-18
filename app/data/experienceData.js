@@ -2,7 +2,7 @@ var experiences = [
     {
         name: "Hoxro Dev Centre",
         location: "Dhaka",
-        position: "Lead Angular Developer",
+        position: "Software Engineer",
         from: "July 2017",
         to: "Present",
         Development_Tools: "Angular 4, NodeJS"
@@ -10,7 +10,7 @@ var experiences = [
     {
         name: "Unclehub LLC",
         location: "Northern Virginia",
-        position: "Lead Full Stack Developer",
+        position: "Full Stack Developer",
         from: "March 2017",
         to: "June 2017",
         Development_Tools: "PostgreSQL, Express, Angular 4, Nodejs, Sequelize ORM Deployment: Heroku, Amazon PostgreSQL"
