@@ -2,8 +2,12 @@
 # Noman Hasan
 
 ## Full Stack Software Developer
+#### B. Sc. in Software Engineering
 
-### B. Sc. in Software Engineering
+**Passionate Fullstack Javascript Engineer. From Frontend to Backend, from Mobile to Desktop, I'm specializing in Universal Javascript with experience in MongoDB, PostgreSQL and other SQL Databases.**
+
+**NodeJS, Angular/Ionic, ReactJS, React Native, Electron - Know necessary frameworks and libraries to be a Universal Javascript Engineer.**
+
 
 #### nomanhasan.com
 
