@@ -17,12 +17,18 @@ export class Home extends React.Component {
                 <div className="column is-4">
                     <Networks />
                     <div className="panel ">
-                        <div className="panel-block">
-                            <a href="./NomanHasan-Resume2017.pdf" className="button is-large is-success radius">
+                        <div className="panel-block" style={{display: 'flex', justifyContent: 'space-around'}}>
+                            <a href="./NomanHasan-Resume2018.pdf" className="button is-success radius">
                                 <span className="icon is-medium">
                                     <i className="fa fa-download"></i>
                                 </span>
                                 <span>Resume as PDF</span>
+                            </a>
+                            <a href="https://github.com/nomanHasan/nomanhasan.github.io/blob/master/NomanHasan-Resume2018.md#noman-hasan" className="button is-success radius">
+                                <span className="icon is-medium">
+                                    <i className="fa fa-download"></i>
+                                </span>
+                                <span>Resume as Markdown</span>
                             </a>
                         </div>
                     </div>
