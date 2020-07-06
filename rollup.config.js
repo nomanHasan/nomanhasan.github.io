@@ -12,12 +12,12 @@ const production = !process.env.ROLLUP_WATCH;
 export default {
 	input: 'src/main.js',
 	output: {
-		sourcemap: true,
+		sourcemap: production ? false : true,
 		// format: 'iife',
 		// name: 'app',
 		// file: 'public/build/bundle.js'
 		format: 'es',
-		dir: 'public/build/',
+		dir: 'build/',
 	},
 	plugins: [
 		svelte({
@@ -26,7 +26,7 @@ export default {
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
 			css: css => {
-				css.write('public/build/bundle.css');
+				css.write('build/bundle.css');
 			},
 
 			// PostCss
