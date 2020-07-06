@@ -14,5 +14,5 @@ const production = !process.env.ROLLUP_WATCH
 
 module.exports = {
   plugins: [tailwindcss("./tailwind.config.js")],
-  // ...(production ? [purgecss] : [])
+  ...(production ? [purgecss] : [])
 };
