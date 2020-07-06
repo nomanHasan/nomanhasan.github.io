@@ -25,7 +25,7 @@
 <div class="profile flex flex-row justify-center">
   <div class="innerdiv flex flex-col justify-start">
     <img
-      src="./propic_30kb.webp"
+      src="./public/propic_30kb.webp"
       class="mx-auto my-3"
       width="200"
       height="200"
@@ -40,12 +40,15 @@
       , Angular, React and NodeJS
     </h2>
     <div class="flex flex-col py-4">
-      <Button classes={'green'} text={'View on Github'} icon={'github.svg'} />
-      <Button text={'View on Medium'} icon={'medium-icon.svg'} />
+      <Button
+        classes={'green'}
+        text={'View on Github'}
+        icon={'public/github.svg'} />
+      <Button text={'View on Medium'} icon={'public/medium-icon.svg'} />
       <Button
         classes={'cyan'}
         text={'View on Linkedin'}
-        icon={'linkedin.svg'} />
+        icon={'public/linkedin.svg'} />
     </div>
     <div class="flex flex-col mb-4">
       <a
