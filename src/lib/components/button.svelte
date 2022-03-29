@@ -23,11 +23,17 @@
   button.cyan:hover {
     @apply bg-cyan-200;
   }
+  button.indigo {
+    @apply bg-indigo-50;
+  }
+  button.indigo:hover {
+    @apply bg-indigo-200;
+  }
 </style>
 
 <button
   class="{classes} text-gray-700 hover:text-gray-800 font-bold py-2 px-4 my-2 rounded flex
   justify-center">
-  <img src="./{icon}" width="25" height="25" alt="Medium Icon" />
+  <img src="./{icon}" width="25" height="25" alt="{text}Icon" />
   <span class="text-center px-4">{text}</span>
 </button>

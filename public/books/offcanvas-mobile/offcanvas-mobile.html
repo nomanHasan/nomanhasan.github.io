@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap menu, navbar, offcanvas, sidebar nav menu CSS examples" />
+<meta name="description" content="Bootstrap 5 navbar make offcanvas on responsive mobile" />  
+
+<title>বিবাহ এবং পারিবারিক নৈতিকতার নীতি</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+<style type="text/css">
+
+body.offcanvas-active{
+	overflow:hidden;
+}
+
+.offcanvas-header{ display:none; }
+
+.screen-darken{
+	height: 100%;
+	width:0%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity:0;
+	visibility:hidden;
+	background-color: rgba(34, 34, 34, 0.6);
+	transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:10; 
+	transition:opacity .3s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+	
+	.offcanvas-header{ display:block; }
+
+	.mobile-offcanvas{
+		visibility: hidden;
+		transform:translateX(-100%);
+	    border-radius:0; 
+		display:block;
+	    position: fixed;
+	    top: 0; left:0;
+	    height: 100%;
+	    z-index: 1200;
+	    width:80%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+
+	.mobile-offcanvas.show{
+		visibility: visible;
+    	transform: translateX(0);
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display: block;
+	}
+
+}	
+/* ============ mobile view .end// ============ */
+</style>
+
+<script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+</head>
+<body>
+
+<span class="screen-darken"></span>
+
+<header class="section-header p-2 px-4">
+<div class="container">
+	<h2> বিবাহ এবং পারিবারিক নৈতিকতার নীতি </h2> 
+</div>
+</header> <!-- section-header.// -->
+
+
+
+<div class="container">
+
+<div style="width: 100%; display: flex; justify-content: flex-end;position: fixed; padding-right: 16px;">
+	<button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button">  সূচিপত্র </button>
+</div>
+
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-primary">
+ <div class="container-fluid">
+    <div class="offcanvas-header">  
+		<button class="btn-close float-end"></button>
+	</div>
+<a class="navbar-brand" href="#">পুরুষের কর্তব্য</a>
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#পরিবারের অভিভাবক">পরিবারের অভিভাবক</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্ত্রীর যত্ন নেওয়া">আপনার স্ত্রীর যত্ন নেওয়া</a></li>
+<li class="nav-item"><a class="nav-link" href="#তার প্রতি প্রেমময় হন">তার প্রতি প্রেমময় হন</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্ত্রীকে সম্মান করুন">আপনার স্ত্রীকে সম্মান করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#ভাল আচরণ করা">ভাল আচরণ করা</a></li>
+<li class="nav-item"><a class="nav-link" href="#অযথা অভিযোগ করা">অযথা অভিযোগ করা</a></li>
+<li class="nav-item"><a class="nav-link" href="#ঝগড়া তোলা">ঝগড়া তোলা</a></li>
+<li class="nav-item"><a class="nav-link" href="#তাকে সন্তুষ্ট করুন এবং তার সাথে সহানুভূতি করুন">তাকে সন্তুষ্ট করুন এবং তার সাথে সহানুভূতি করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#ফল্ট কুড়ান না">ফল্ট কুড়ান না</a></li>
+<li class="nav-item"><a class="nav-link" href="#সমালোচকদের অপবাদমূলক কথাবার্তায় মনোযোগ দেবেন না">সমালোচকদের অপবাদমূলক কথাবার্তায় মনোযোগ দেবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#তার ভুল উপেক্ষা">তার ভুল উপেক্ষা</a></li>
+<li class="nav-item"><a class="nav-link" href="#মনযোগী হও">মনযোগী হও</a></li>
+<li class="nav-item"><a class="nav-link" href="#স্বামীর শাস্তিমূলক অধিকার">স্বামীর শাস্তিমূলক অধিকার</a></li>
+<li class="nav-item"><a class="nav-link" href="#সন্দেহজনক পুরুষ">সন্দেহজনক পুরুষ</a></li>
+<li class="nav-item"><a class="nav-link" href="#অবিশ্বস্ত মহিলা">অবিশ্বস্ত মহিলা</a></li>
+<li class="nav-item"><a class="nav-link" href="#অন্য মহিলাদের পিছনে যান না">অন্য মহিলাদের পিছনে যান না</a></li>
+<li class="nav-item"><a class="nav-link" href="#কৃতজ্ঞ হও">কৃতজ্ঞ হও</a></li>
+<li class="nav-item"><a class="nav-link" href="#বাড়িতেও পরিষ্কার-পরিচ্ছন্ন থাকুন">বাড়িতেও পরিষ্কার-পরিচ্ছন্ন থাকুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্ত্রীকে নার্স করুন">আপনার স্ত্রীকে নার্স করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#পারিবারিক অর্থনীতি">পারিবারিক অর্থনীতি</a></li>
+<li class="nav-item"><a class="nav-link" href="#পরিবারের কাজে আপনার সাহায্য প্রসারিত করুন">পরিবারের কাজে আপনার সাহায্য প্রসারিত করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#শীঘ্রই বাড়িতে ফিরে">শীঘ্রই বাড়িতে ফিরে</a></li>
+<li class="nav-item"><a class="nav-link" href="#বিশ্বস্ত হতে">বিশ্বস্ত হতে</a></li>
+<li class="nav-item"><a class="nav-link" href="#শিক্ষা ও প্রশিক্ষণ">শিক্ষা ও প্রশিক্ষণ</a></li>
+<li class="nav-item"><a class="nav-link" href="#একটি সন্তান হচ্ছে">একটি সন্তান হচ্ছে</a></li>
+<li class="nav-item"><a class="nav-link" href="#গর্ভাবস্থা এবং প্রসব">গর্ভাবস্থা এবং প্রসব</a></li>
+<li class="nav-item"><a class="nav-link" href="#শিশুদের প্রতিপালনে সহায়তা">শিশুদের প্রতিপালনে সহায়তা</a></li>
+<li class="nav-item"><a class="nav-link" href="#মতবিরোধ নিষ্পত্তিতে প্রধান বাধা">মতবিরোধ নিষ্পত্তিতে প্রধান বাধা</a></li>
+<li class="nav-item"><a class="nav-link" href="#ডিভোর্স">ডিভোর্স</a></li>
+</ul>
+<a class="navbar-brand" href="#">নারীর কর্তব্য</a>
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#বিয়ের উদ্দেশ্য">বিয়ের উদ্দেশ্য</a></li>
+<li class="nav-item"><a class="nav-link" href="#স্বামীর সাথে বসবাস">স্বামীর সাথে বসবাস</a></li>
+<li class="nav-item"><a class="nav-link" href="#উদারতা">উদারতা</a></li>
+<li class="nav-item"><a class="nav-link" href="#স্বামীর সম্মান">স্বামীর সম্মান</a></li>
+<li class="nav-item"><a class="nav-link" href="#অভিযোগ এবং অভিযোগ">অভিযোগ এবং অভিযোগ</a></li>
+<li class="nav-item"><a class="nav-link" href="#আনন্দদায়ক স্বভাব">আনন্দদায়ক স্বভাব</a></li>
+<li class="nav-item"><a class="nav-link" href="#ভুল প্রত্যাশা">ভুল প্রত্যাশা</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীর জন্য একটি সান্ত্বনা হন">আপনার স্বামীর জন্য একটি সান্ত্বনা হন</a></li>
+<li class="nav-item"><a class="nav-link" href="#কৃতজ্ঞ হোন">কৃতজ্ঞ হোন</a></li>
+<li class="nav-item"><a class="nav-link" href="#ঘাটতি খুঁজবেন না">ঘাটতি খুঁজবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামী ছাড়া অন্য কারো দিকে তাকাবেন না">আপনার স্বামী ছাড়া অন্য কারো দিকে তাকাবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#ইসলামিক হিজাব">ইসলামিক হিজাব</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীর ভুল ক্ষমা করুন">আপনার স্বামীর ভুল ক্ষমা করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীর আত্মীয়দের সাথে মোকাবিলা করা">আপনার স্বামীর আত্মীয়দের সাথে মোকাবিলা করা</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীর কাজের সাথে মোকাবিলা করা">আপনার স্বামীর কাজের সাথে মোকাবিলা করা</a></li>
+<li class="nav-item"><a class="nav-link" href="#যদি আপনার নিজের শহর থেকে দূরে থাকতে হয়">যদি আপনার নিজের শহর থেকে দূরে থাকতে হয়</a></li>
+<li class="nav-item"><a class="nav-link" href="#যদি আপনার স্বামী বাড়িতে কাজ করে">যদি আপনার স্বামী বাড়িতে কাজ করে</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীকে উন্নতি করতে সাহায্য করুন">আপনার স্বামীকে উন্নতি করতে সাহায্য করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#সে যেন বিভ্রান্ত না হয় সে বিষয়ে সতর্ক থাকুন">সে যেন বিভ্রান্ত না হয় সে বিষয়ে সতর্ক থাকুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#সন্দেহজনক মহিলা">সন্দেহজনক মহিলা</a></li>
+<li class="nav-item"><a class="nav-link" href="#অপবাদমূলক কথাবার্তায় মনোযোগ দেবেন না">অপবাদমূলক কথাবার্তায় মনোযোগ দেবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার স্বামীর সন্তুষ্টি এবং আপনার মায়ের নয়">আপনার স্বামীর সন্তুষ্টি এবং আপনার মায়ের নয়</a></li>
+<li class="nav-item"><a class="nav-link" href="#বাড়িতেও পরিষ্কার এবং সুন্দর থাকুন">বাড়িতেও পরিষ্কার এবং সুন্দর থাকুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#তার কাছে মা হও">তার কাছে মা হও</a></li>
+<li class="nav-item"><a class="nav-link" href="#গোপন রাখুন">গোপন রাখুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#তাঁর ব্যবস্থাপনা গ্রহণ করুন">তাঁর ব্যবস্থাপনা গ্রহণ করুন</a></li>
+<li class="nav-item"><a class="nav-link" href="#যখন সময় কঠিন হয় তখন সম্পদশালী হন">যখন সময় কঠিন হয় তখন সম্পদশালী হন</a></li>
+<li class="nav-item"><a class="nav-link" href="#কথা বলতে অস্বীকার করবেন না এবং সাল্ক করবেন না">কথা বলতে অস্বীকার করবেন না এবং সাল্ক করবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#সে রেগে গেলে চুপ থাকে">সে রেগে গেলে চুপ থাকে</a></li>
+<li class="nav-item"><a class="nav-link" href="#পুরুষদের শখ">পুরুষদের শখ</a></li>
+<li class="nav-item"><a class="nav-link" href="#গৃহস্থালি">গৃহস্থালি</a></li>
+<li class="nav-item"><a class="nav-link" href="#পরিচ্ছন্নতা">পরিচ্ছন্নতা</a></li>
+<li class="nav-item"><a class="nav-link" href="#একটি পরিপাটি ঘর">একটি পরিপাটি ঘর</a></li>
+<li class="nav-item"><a class="nav-link" href="#খাবার তৈরী করছি">খাবার তৈরী করছি</a></li>
+<li class="nav-item"><a class="nav-link" href="#অতিথিদের গ্রহণ">অতিথিদের গ্রহণ</a></li>
+<li class="nav-item"><a class="nav-link" href="#হাউসের ট্রাস্টি">হাউসের ট্রাস্টি</a></li>
+<li class="nav-item"><a class="nav-link" href="#মহিলাদের কেরিয়ার">মহিলাদের কেরিয়ার</a></li>
+<li class="nav-item"><a class="nav-link" href="#আপনার অতিরিক্ত সময় নষ্ট করবেন না">আপনার অতিরিক্ত সময় নষ্ট করবেন না</a></li>
+<li class="nav-item"><a class="nav-link" href="#মাতৃত্ব (শিশুদের যত্ন নেওয়া)">মাতৃত্ব (শিশুদের যত্ন নেওয়া)</a></li>
+<li class="nav-item"><a class="nav-link" href="#পুষ্টি এবং স্বাস্থ্যবিধি">পুষ্টি এবং স্বাস্থ্যবিধি</a></li>
+
+	</ul>
+
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+
+<section class="section-content py-5">
+
+</section>
+
+</div><!-- container //  -->
+
+</body>
+<script type="module">
+	fetch('./book-text.html').then(res => res.text()).then(res => {
+		console.log("dw", res);		
+		console.log(res);
+
+		document.querySelector('body > div > section').innerHTML = res;
+	});
+</script>
+</html>

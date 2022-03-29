@@ -12,7 +12,7 @@
   }
 </style>
 
-<div class="flex flex-col py-4 mt-6 text-gray-600 skills w-full">
+<div class="flex flex-col py-4 mt-6 text-gray-600 skills w-full mb-6">
   <div class="p-4">
     <div class="text-2xl text-gray-700 font-bold">Proficient</div>
     <div class="py-4">

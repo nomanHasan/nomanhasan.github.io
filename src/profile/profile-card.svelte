@@ -1,17 +1,12 @@
 <script>
   import Button from "../lib/components/button.svelte";
+  import { Link } from "svelte-routing";
 </script>
 
 <style>
   .profile {
     min-height: 100%;
     min-width: 360px;
-  }
-  .propic {
-    height: 200px;
-    width: 200px;
-    background-image: url("/propic_30kb.webp");
-    background-size: 200px 200px;
   }
   .name {
     font-weight: 100;
@@ -68,5 +63,11 @@
         <b>Skills</b>
       </a>
     </div>
+    <a href="#/resume">
+      <Button
+        classes={'indigo'}
+        text={'Download Resume'}
+        icon={'public/download.svg'} />
+    </a>
   </div>
 </div>
